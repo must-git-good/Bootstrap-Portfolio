@@ -1,66 +1,114 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../Bootstrap-Portfolio/style.css">
-    <title>My Portfolio</title> <!-- But built with bootstrap... -->
-</head>
+   
+   <!-- Other style choices -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>My Portfolio</title>
+  </head>
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Kenny Fickling</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-        </nav>
-    <div class="container">
-    
-        <row> <!-- Main Body -->
-            <col-sm-10>
-                <div class="mainFormat">
-                        <div class="card border-primary mb-3" style="max-width: 68rem;">
-                              <div class="card border-light mb-3" style="max-width: 68rem;">
-                                <div class="card-header">About Me</div>
-                                <div class="card-body">
-                                  <!-- <h5 class="card-title">Light card title</h5> -->
-                                  <img src="http://placehold.it/180x180" alt="#">
-                                  <p class="card-text">
-                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, natus! Nesciunt error doloribus pariatur repellat consectetur, saepe voluptates dolore ipsa atque laudantium, accusantium nobis porro quod eligendi impedit aliquam sapiente? 
-                                      <br>
-                                      Voluptates molestias, dicta dolore labore assumenda nam provident rerum excepturi quia quo neque explicabo itaque dignissimos quam praesentium debitis, odit perspiciatis aut. Possimus accusamus nemo eum quisquam, consequatur rem quasi?
-                                  </p>
-                                </div>
-                              </div>
-                             
-                </div>
-            </col-sm-10>
-        </row>
 
-        <row> <!-- Footer -->
-            <col-sm-12>
-                Copyright 2018 Kenny Fickling
-            </col-sm-12>
-        </row>
-        
+    <!-- NAVBAR SECTION -->
+<class ="container-fluid"></class>
+<div class="p-0">
+<nav class="navbar navbar-expand-md bg-white navbar-light">
 
+    <div class="navbar-brand"><span id="headTitle"><h1>Kenny Fickling</h1></span>
     </div>
-    
-</body>
+
+
+    <div class="nav justify-content-end">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><span id="headLinks"><p>About</p></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html"><span id="headLinks"><p>Portfolio</p></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html"><span id="headLinks"><p>Contact</p></span></a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav>
+</div>
+
+<!-- MAIN BODY SECTION -->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-1">
+            <!-- Left blank -->
+        </div>
+        <div class="col-sm-10">
+                <div class="midBG"> 
+                        <div class ="midMain">
+                            <h2>About Me</h2>
+                                <p title="Here's a bit about me.">
+                                    <img src="assets/images/me.jpg" 
+                                         alt="Kenny's face." 
+                                         style="width: 140px; 
+                                                padding-top:0;
+                                                padding-right:15px;
+                                                padding-bottom:0px;
+                                                padding-left:0px;
+                                                float: left"  
+                                         title="That's my pretty face."/>
+                                            <!-- For now we are addressing some formatting by changing the amount of text, this isn't ideal. Make this work regardless of input size with some minheight or whatever-->
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                        <br>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    </p>
+                                </p>
+                        </div>
+                    </div>
+        </div>
+        <div class="col-sm-1">
+            <!-- Left blank -->
+        </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <!-- <footer>
+                    
+                    <br>
+                    Copyright © 2018 Kenny Fickling
+            </footer> -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
 </html>
